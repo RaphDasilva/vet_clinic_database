@@ -41,3 +41,4 @@ SELECT * from animals;
 
 DELETE FROM animals
 WHERE date_of_birth > '2022-01-01';
+SAVEPOINT first_delete;
