@@ -48,3 +48,8 @@ SET weight_kg = weight_kg * -1;
 
 ROLLBACK TO first_delete;
 
+UPDATE animals
+SET weight_kg = weight_kg * -1
+WHERE weight_kg < 0;
+
+
