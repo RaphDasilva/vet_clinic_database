@@ -40,4 +40,4 @@ SELECT * from animals;
 /*4th transaction */
 
 DELETE FROM animals
-WHERE birth_date > '2022-01-01';
+WHERE date_of_birth > '2022-01-01';
