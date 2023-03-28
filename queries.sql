@@ -36,3 +36,8 @@ BEGIN;
 DELETE FROM animals;
 ROLLBACK;
 SELECT * from animals;
+
+/*4th transaction */
+
+DELETE FROM animals
+WHERE birth_date > '2022-01-01';
