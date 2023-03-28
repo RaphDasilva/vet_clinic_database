@@ -69,14 +69,14 @@ After you're finished please remove all the comments and instructions!
   <ul>
     <li><a href="https://expressjs.com/">Express.js</a></li>
   </ul>
-</details> --> -->
+</details> -->
 
-
+<details>
 <summary>Database</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
-
+</details>
 
 <!-- Features -->
 
@@ -96,7 +96,7 @@ LIVE DEMO
 
 > Add a link to your deployed project.
 
-- [No live demo]()
+- [No live demo]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
