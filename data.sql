@@ -43,5 +43,5 @@ VALUES ('Sam Smith',34 ),
        ('Jodie Whittaker', 38);
 
        INSERT INTO species (name) 
-VALUES ('Pokemon'),
-       ('Digimon');
+       VALUES ('Pokemon'),
+              ('Digimon');
