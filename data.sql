@@ -73,4 +73,10 @@ WHERE name = 'Charmander' or name = 'Squirtle' or name = 'Blossom';
 UPDATE animals
 set owner_id = 5
 WHERE name = 'Angemon' or name = 'Boarmon';
+
+UPDATE owners
+SET full_name = 'Jennifer Orwell'
+WHERE id = 2;
+
+
                  
