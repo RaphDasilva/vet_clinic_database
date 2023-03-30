@@ -127,3 +127,10 @@ SELECT owner_id, full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME"
    WHERE vets_id = (SELECT id from vets WHERE name = 'William Tatcher')
    ORDER BY visit_date DESC LIMIT 1;
 
+   SELECT vets.name AS "VET NAME" , COUNT(animals.name) AS "animals count"
+    from animals
+    JOIN visits ON animals.id = visits.animal_id
+    JOIN vets ON visits.vets_id = vets.id
+    WHERE vets_id = (SELECT id from vets WHERE name = 'Stephanie Mendez')
+    GROUP BY vets.name;
+
