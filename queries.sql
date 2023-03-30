@@ -167,7 +167,7 @@ SELECT owner_id, full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME"
     SELECT species.name AS "Species Name" 
     FROM visits
     JOIN animals ON visits.animal_id = animals.id 
-    JOIN vets ON visits.vets_id = vets.id
+    JOIN vets ON  visits.vets_id = vets.id
     JOIN species ON animals.species_id = species.id 
     WHERE visits.vets_id = (SELECT id FROM vets WHERE name = 'Maisy Smith') 
     GROUP BY species.name 
