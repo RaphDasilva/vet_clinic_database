@@ -150,3 +150,10 @@ SELECT owner_id, full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME"
    JOIN visits ON animals.id = visits.animal_id
    GROUP BY  animals.name
    ORDER BY COUNT (*) DESC LIMIT 1;
+
+   SELECT animals.name AS "FIRST ANIMAL SEEN", visit_date
+    from animals
+    JOIN visits
+    ON animals.id = visits.animal_id
+    WHERE vets_id = (SELECT id from vets WHERE name = 'Maisy Smith')
+    ORDER BY visit_date ASC LIMIT 1;
