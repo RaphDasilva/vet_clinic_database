@@ -76,3 +76,10 @@ CREATE TABLE visits (
   CONSTRAINT fk_vets FOREIGN KEY(vets_id)REFERENCES vets(id),
   CONSTRAINT PK_visits PRIMARY KEY (animal_id ,vets_id)
 );
+
+ALTER TABLE visits
+DROP CONSTRAINT PK_visits;
+
+ALTER TABLE visits 
+ADD CONSTRAINT PK_visits 
+PRIMARY KEY (animal_id, vets_id, visit_date);
