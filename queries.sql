@@ -134,3 +134,7 @@ SELECT owner_id, full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME"
     WHERE vets_id = (SELECT id from vets WHERE name = 'Stephanie Mendez')
     GROUP BY vets.name;
 
+   SELECT vets.id, vets.name AS "Vet name", species.name AS "SpecializATION"
+   FROM vets
+   LEFT JOIN specializations ON specializations.vets_id = vets.id
+   LEFT JOIN species on specializations.species_id = species.id;
