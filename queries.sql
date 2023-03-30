@@ -163,3 +163,12 @@ SELECT owner_id, full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME"
     JOIN visits ON animals.id = visits.animal_id
     JOIN vets ON visits.vets_id = vets.id
     ORDER BY visit_date DESC LIMIT 1;
+
+    SELECT species.name AS "Species Name" 
+    FROM visits
+    JOIN animals ON visits.animal_id = animals.id 
+    JOIN vets ON visits.vets_id = vets.id
+    JOIN species ON animals.species_id = species.id 
+    WHERE visits.vets_id = (SELECT id FROM vets WHERE name = 'Maisy Smith') 
+    GROUP BY species.name 
+    ORDER BY count(animals.name) DESC LIMIT 1;
