@@ -90,3 +90,9 @@ ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 -- Remove the primary keys from the visits table
 ALTER TABLE visits DROP CONSTRAINT pk_visits;
+
+CREATE INDEX animals_visits_ids ON visits(animal_id);
+
+CREATE INDEX vets_visits_ids ON visits(vets_id);
+
+CREATE INDEX owners_visits_ids ON owners(email); 
