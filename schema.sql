@@ -83,3 +83,10 @@ DROP CONSTRAINT PK_visits;
 ALTER TABLE visits 
 ADD CONSTRAINT PK_visits 
 PRIMARY KEY (animal_id, vets_id, visit_date);
+
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- Remove the primary keys from the visits table
+ALTER TABLE visits DROP CONSTRAINT pk_visits;
