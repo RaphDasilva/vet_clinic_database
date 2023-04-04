@@ -200,6 +200,12 @@ Example:
 - Twitter: [@Danmatama](https://twitter.com/Danmatama)
 - LinkedIn: [@DanielMatama](https://www.linkedin.com/in/DanielMatamaMwebesa/)
 
+👤 **Mark Fenekayas**
+
+- GitHub: [Fene-87](https://github.com/Fene-87)
+- Twitter: [@markfen4](https://twitter.com/markfen4)
+- LinkedIn: [Mark Fenekayas](https://www.linkedin.com/in/mark-fenekayas/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
