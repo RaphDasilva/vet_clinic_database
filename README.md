@@ -194,6 +194,14 @@ Example:
 - LinkedIn: [@RaphOkolo](https://www.linkedin.com/in/RaphOkolo/)
 
 
+👤 **Daniel Matama**
+
+- GitHub: [DanielMatama](https://github.com/danielmatama)
+- Twitter: [@Danmatama](https://twitter.com/Danmatama)
+- LinkedIn: [@DanielMatama](https://www.linkedin.com/in/DanielMatamaMwebesa/)
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
