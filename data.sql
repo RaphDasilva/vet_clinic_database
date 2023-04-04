@@ -70,7 +70,8 @@ INSERT INTO specializations (species_id, vets_id, )
            ((SELECT id from species WHERE name = 'Pokemon'), (SELECT id from vets WHERE name = 'Stephanie Mendez')),
            ((SELECT id from species WHERE name = 'Digimon'), (SELECT id from vets WHERE name = 'Jack Harkness'));
 
-INSERT INTO visits (animal_id, vets_id, visit_date)
+INSERT INTO visits (animal_id, vets_id, visit_date) 
+
     VALUES  ((SELECT id FROM animals WHERE name = 'Agumon'),(SELECT id from vets WHERE name = 'William Tatcher'), '2020-05-24'),
             ((SELECT id FROM animals WHERE name = 'Agumon'),(SELECT id from vets WHERE name = 'Stephanie Mendez'), '2020-07-22'),
             ((SELECT id FROM animals WHERE name = 'Gabumon'),(SELECT id from vets WHERE name = 'Jack Harkness'), '2021-02-02'),
@@ -91,6 +92,10 @@ INSERT INTO visits (animal_id, vets_id, visit_date)
             ((SELECT id FROM animals WHERE name = 'Boarmon'),(SELECT id from vets WHERE name = 'Maisy Smith'), '2020-08-03'),
             ((SELECT id FROM animals WHERE name = 'Blossom'),(SELECT id from vets WHERE name = 'Stephanie Mendez'), '2020-05-24'),
             ((SELECT id FROM animals WHERE name = 'Blossom'),(SELECT id from vets WHERE name = 'William Tatcher'), '2021-01-11');
+
+INSERT INTO visits (animal_id, vets_id, visit_date) SELECT * FROM (SELECT id FROM animals) animal_id, (SELECT id FROM vets) vets_id, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
+insert into owners (full_name, email) select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
+
 
 
                  

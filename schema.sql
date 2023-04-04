@@ -74,7 +74,7 @@ CREATE TABLE visits (
   visit_date DATE,
   CONSTRAINT fk_animal FOREIGN KEY(animal_id)REFERENCES animals(id),
   CONSTRAINT fk_vets FOREIGN KEY(vets_id)REFERENCES vets(id),
-  CONSTRAINT PK_visits PRIMARY KEY (animal_id ,vets_id)
+  CONSTRAINT PK_visits PRIMARY KEY (animal_id ,vets_id,visit_date)
 );
 
 ALTER TABLE visits
@@ -83,3 +83,16 @@ DROP CONSTRAINT PK_visits;
 ALTER TABLE visits 
 ADD CONSTRAINT PK_visits 
 PRIMARY KEY (animal_id, vets_id, visit_date);
+
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- Remove the primary keys from the visits table
+ALTER TABLE visits DROP CONSTRAINT pk_visits;
+
+CREATE INDEX animals_visits_ids ON visits(animal_id);
+
+CREATE INDEX vets_visits_id ON visits(vets_id);
+
+CREATE INDEX owners_visits_ids ON owners(email);
