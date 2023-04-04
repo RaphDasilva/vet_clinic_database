@@ -96,7 +96,8 @@ After you're finished please remove all the comments and instructions!
 
 - [Diagram Link](https://drawsql.app/teams/raph-1/diagrams/vet-clinic/embed)
 
-![vet-clinic](https://drawsql.app/teams/raph-1/diagrams/vet-clinic/embed)
+![vet-clinic](https://user-images.githubusercontent.com/110599399/229852076-e80ca62c-3cac-4f56-869b-933166e3b7d5.png)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
